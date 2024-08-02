@@ -40,10 +40,6 @@ Differencing is a technique used to transform a non-stationary series into a sta
 ## Concept of Lags
 Lags refer to the past values in a time series that are used to predict future values. The concept of lags is crucial in time series analysis as it helps in understanding the dependence of current values on past values. For instance, in an Auto-Regressive (AR) model, the value at time `t` depends on the value at time `t-1`, `t-2`, and so on.
 
-Mathematically, for an AR(1) model:
-\[ X_t = \phi X_{t-1} + \epsilon_t \]
-where \(\phi\) is the coefficient and \(\epsilon_t\) is the white noise error term.
-
 ## ACF and PACF Plot
 Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) plots are used to identify the correlation between observations at different lags. These plots help in determining the appropriate order of AR and MA models.
 
@@ -57,13 +53,7 @@ Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) plots
 ## Auto-Regressive Series
 An Auto-Regressive (AR) series is a time series model where the current observation is regressed on its previous observations. AR models are useful for capturing the linear dependence in a time series. For example, in weather forecasting, today's temperature might be predicted based on the temperatures of the past few days.
 
-Mathematically, an AR(p) model is represented as:
-\[ X_t = \phi_1 X_{t-1} + \phi_2 X_{t-2} + \ldots + \phi_p X_{t-p} + \epsilon_t \]
-where \(\phi_1, \phi_2, \ldots, \phi_p\) are the coefficients and \(\epsilon_t\) is the white noise error term.
-
 ## Moving Average Series
 A Moving Average (MA) series is a time series model where the current observation is a linear combination of past error terms. MA models help in capturing the noise structure in a time series. For example, an MA model can be used to smooth out short-term fluctuations in economic data.
 
-Mathematically, an MA(q) model is represented as:
-\[ X_t = \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} + \ldots + \theta_q \epsilon_{t-q} \]
-where \(\theta_1, \theta_2, \ldots, \theta_q\) are the coefficients and \(\epsilon_t\) is the white noise error term.
+
